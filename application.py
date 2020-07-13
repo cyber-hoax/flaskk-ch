@@ -9,13 +9,14 @@ from models import *
 
 # Configure app
 app = Flask(__name__)
-app.secret_key='dcdcwe'
+app.secret_key=os.environ.get('SECRET') 
 app.config['WTF_CSRF_SECRET_KEY'] = "b'f\xfa\x8b{X\x8b\x9eM\x83l\x19\xad\x84\x08\xaa"
 
 # Configure database
-app.config['SQLALCHEMY_DATABASE_URI']='postgres://hmqtbfdvdzcfch:19b240437b1d1f0b3e3758392087cd9e0900fd14372d65d95884e7a2217f8648@ec2-50-16-198-4.compute-1.amazonaws.com:5432/d8frjgevahei2q'
+app.config['SQLALCHEMY_DATABASE_URI']=os.environ.get('DATABASE_URL')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
+
 
 # Initialize login manager
 login = LoginManager(app)
