@@ -36,7 +36,7 @@
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s;
-    color: #335177;
+    color: #d92027;
 }
 
 @media (max-width: 567px) {
@@ -107,7 +107,7 @@ input[type=text]:focus{
     margin-right:1em;
     padding: 0.5em 0.5em 0.5em 1em;
     border-radius: 5px;
-    border-color: #206ED2;
+    border-color: #d92027;
     border-width: 1px;
     border-style: solid;
     /* animation */
