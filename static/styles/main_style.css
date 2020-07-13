@@ -1,6 +1,8 @@
 h1 {
-    color: #206ED2;
+    color: #d92027;
 }
+
+
 
 #main-section {
     overflow: hidden; /* Makee this div contain its floated children */
